@@ -38,6 +38,7 @@ Controlling two steppers with just one interrupt routine was a challenge. Each m
 To simplify initial testing, I began with a single-axis setup. This reduced complexity and made beam support easier. A rotary encoder was used to measure the pendulum's angle, doubling as the mounting axis.
 
 Knowing this was a temporary phase, I attached a ruler to the encoder to mimic a pendulum—simple but effective. The encoder provided accurate angle readings in all conditions.
+
 https://github.com/user-attachments/assets/bc1910cb-cfc5-4556-ab2c-7ff43eb2ddb9
 
 
@@ -53,11 +54,19 @@ At this stage, the pendulum was still mounted directly to the encoder shaft, whi
 A ball joint seemed like the ideal solution but proved impractical. High-quality low-friction ball joints were too expensive, and more importantly, they didn’t allow internal routing of wires needed for the IMU on the pole—external wiring would apply unwanted forces and interfere with motion.
 
 Instead, I opted for a custom 3D printed universal joint. While it doesn’t allow full 360° motion, it performs reliably within ±45°, which is sufficient for this application. It also uses ball bearings, ensuring smooth, low-resistance movement. This made it a practical and affordable alternative that met both mechanical and electrical constraints.
+
 <img width="200" alt="image" src="https://github.com/user-attachments/assets/96e273cc-b0df-4cd4-8c8c-75e214a7bf4d" />
 
 
 
 ## Control system (Coupling of PIDs)
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/a70526a4-1b07-40af-b24d-f153e88ad73e" />
+The initial control system used a single PID to keep the pole upright. While it worked to some extent, the system still failed—mainly because “vertical” wasn’t actually vertical. This caused the pole to drift toward the mechanical limits.
+
+To solve this, I introduced a second PID to keep the cart centered. This adjusts the desired angle of the first PID, effectively tilting the pole towards the centre of the assembly. This coupling allows the cart to move proactively, keeping the pole balanced while staying within bounds.
+
+A diagram of the coupled PID structure is shown below.
+
+
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/a70526a4-1b07-40af-b24d-f153e88ad73e" />
 
 
