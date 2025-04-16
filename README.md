@@ -1,7 +1,6 @@
 # Dual Axis Inverted Pendulum
-video or image
-## Overview
 
+## Overview
 
 ## Gantry
 ### H-Bot belt drive
@@ -14,6 +13,8 @@ video or image
 ## Pendulum Support
 ### Single Axis
 ### Dual Axis
+<img width="369" alt="image" src="https://github.com/user-attachments/assets/b473383c-35f8-483d-83fd-1f619fedbb70" />
+
 
 ## Angle sensing
 ### Single Axis - Rotary encoder
