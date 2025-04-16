@@ -33,22 +33,27 @@ Controlling two steppers with just one interrupt routine was a challenge. Each m
 <img width="200" alt="image" src="https://github.com/user-attachments/assets/20fb6393-c4a2-4148-9a1b-7a99fd57f553" />
 
 
-## Pendulum Support
-### Single Axis
-### Dual Axis
-<img width="200" alt="image" src="https://github.com/user-attachments/assets/96e273cc-b0df-4cd4-8c8c-75e214a7bf4d" />
-
-
-
-## Angle sensing
+## Angle sensing and Pendulum Support
 ### Single Axis - Rotary encoder then IMU
-https://github.com/user-attachments/assets/bc1910cb-cfc5-4556-ab2c-7ff43eb2ddb9
+To simplify initial testing, I began with a single-axis setup. This reduced complexity and made beam support easier. A rotary encoder was used to measure the pendulum's angle, doubling as the mounting axis.
 
-https://github.com/user-attachments/assets/5a227c51-e89e-4291-961d-eea1162fdd3e
+Knowing this was a temporary phase, I attached a ruler to the encoder to mimic a pendulum—simple but effective. The encoder provided accurate angle readings in all conditions.
+https://github.com/user-attachments/assets/bc1910cb-cfc5-4556-ab2c-7ff43eb2ddb9
 
 
 ### Dual Axis - IMU (Combining and filtering data)
+I quickly realized a rotary encoder wouldn’t work for two-axis motion—it only tracks rotation around a single shaft. I switched to an Inertial Measurement Unit (IMU), which introduced new challenges.
 
+IMUs are less precise and sensitive to vibration. Filtering, calibrating, and combining gyroscope and accelerometer data became essential for accurate angle estimation. The video below shows the single-axis setup balancing using the IMU.
+
+https://github.com/user-attachments/assets/5a227c51-e89e-4291-961d-eea1162fdd3e
+
+At this stage, the pendulum was still mounted directly to the encoder shaft, which restricted it to a single axis. To enable full two-axis balancing, I needed a joint that allowed free rotation in all directions with minimal friction.
+
+A ball joint seemed like the ideal solution but proved impractical. High-quality low-friction ball joints were too expensive, and more importantly, they didn’t allow internal routing of wires needed for the IMU on the pole—external wiring would apply unwanted forces and interfere with motion.
+
+Instead, I opted for a custom 3D printed universal joint. While it doesn’t allow full 360° motion, it performs reliably within ±45°, which is sufficient for this application. It also uses ball bearings, ensuring smooth, low-resistance movement. This made it a practical and affordable alternative that met both mechanical and electrical constraints.
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/96e273cc-b0df-4cd4-8c8c-75e214a7bf4d" />
 
 
 
