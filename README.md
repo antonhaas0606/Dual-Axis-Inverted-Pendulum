@@ -23,6 +23,9 @@ https://github.com/user-attachments/assets/2ce915aa-1283-47be-880a-43116596d27a
 ### Single Axis - Rotary encoder then IMU
 https://github.com/user-attachments/assets/bc1910cb-cfc5-4556-ab2c-7ff43eb2ddb9
 
+https://github.com/user-attachments/assets/5a227c51-e89e-4291-961d-eea1162fdd3e
+
+
 ### Dual Axis - IMU (Combining and filtering data)
 
 
