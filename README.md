@@ -1,5 +1,7 @@
 # Dual Axis Inverted Pendulum
 
+https://github.com/user-attachments/assets/2ce915aa-1283-47be-880a-43116596d27a
+
 ## Overview
 
 ## Gantry
@@ -18,11 +20,12 @@
 
 
 ## Angle sensing
-### Single Axis - Rotary encoder
+### Single Axis - Rotary encoder then IMU
+https://github.com/user-attachments/assets/bc1910cb-cfc5-4556-ab2c-7ff43eb2ddb9
+
 ### Dual Axis - IMU (Combining and filtering data)
 
 
-https://github.com/user-attachments/assets/bc1910cb-cfc5-4556-ab2c-7ff43eb2ddb9
 
 
 ## Control system (Coupling of PIDs)
