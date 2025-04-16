@@ -20,9 +20,18 @@ Initially, I explored motion systems similar to those in 3D printers and laser c
 A known challenge with H-bot systems is that lateral movement can introduce torque on the crossbeam, causing slight misalignment. To address this, I mounted precise linear guides on both axes using custom 3D-printed brackets to ensure rigidity and accuracy.
 
 
+
+
 ### Stepper Motors and control
-#### Linear accel/decel -eration
-#### Coordinating multiple steppers with a single interrupt routine
+
+To avoid the complexity of using encoders for position tracking, I chose stepper motors due to their inherent precision and ease of control. However, I quickly ran into issues when attempting high-speed motion—specifically, the motors would lock up during rapid acceleration.
+
+The solution was to implement linear acceleration and deceleration, allowing the motors to stay just below their acceleration threshold without losing steps. This turned out to be far more difficult than expected, as achieving truly linear speed ramps with stepper motors requires careful timing and tuning. Additionally, motor vibrations became a significant issue, interfering with the sensors intended for the pendulum. While reducing step size helped reduce vibrations, it also slowed down motion—requiring careful trade-offs between speed and system stability.
+
+Controlling two steppers with just one interrupt routine was a challenge. Each motor needed independent speed profiles while staying in sync. A YouTube video helped clarify the concept, but implementing it was still complex. In the end, both motors could run with smooth, linear acceleration at the speeds needed for real-time control.
+
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/20fb6393-c4a2-4148-9a1b-7a99fd57f553" />
+
 
 ## Pendulum Support
 ### Single Axis
