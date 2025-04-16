@@ -4,7 +4,7 @@
 
 ## Gantry
 ### H-Bot belt drive
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/759edab8-2bf5-41ba-946d-4d369a11933d" />
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/759edab8-2bf5-41ba-946d-4d369a11933d" />
 
 ### Stepper Motors and control
 #### Linear accel/decel -eration
@@ -13,7 +13,7 @@
 ## Pendulum Support
 ### Single Axis
 ### Dual Axis
-<img width="100" alt="image" src="https://github.com/user-attachments/assets/96e273cc-b0df-4cd4-8c8c-75e214a7bf4d" />
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/96e273cc-b0df-4cd4-8c8c-75e214a7bf4d" />
 
 
 
