@@ -13,7 +13,7 @@
 ## Pendulum Support
 ### Single Axis
 ### Dual Axis
-<img width="467" alt="image" src="https://github.com/user-attachments/assets/96e273cc-b0df-4cd4-8c8c-75e214a7bf4d" />
+<img width="100" alt="image" src="https://github.com/user-attachments/assets/96e273cc-b0df-4cd4-8c8c-75e214a7bf4d" />
 
 
 
