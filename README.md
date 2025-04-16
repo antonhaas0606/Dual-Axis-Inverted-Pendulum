@@ -13,7 +13,8 @@
 ## Pendulum Support
 ### Single Axis
 ### Dual Axis
-<img width="369" alt="image" src="https://github.com/user-attachments/assets/b473383c-35f8-483d-83fd-1f619fedbb70" />
+<img width="467" alt="image" src="https://github.com/user-attachments/assets/96e273cc-b0df-4cd4-8c8c-75e214a7bf4d" />
+
 
 
 ## Angle sensing
