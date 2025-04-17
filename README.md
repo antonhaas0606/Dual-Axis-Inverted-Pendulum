@@ -1,6 +1,7 @@
 # Dual Axis Inverted Pendulum
 
-https://github.com/user-attachments/assets/2ce915aa-1283-47be-880a-43116596d27a
+https://github.com/user-attachments/assets/b5cbf291-8e1d-44cc-8e0f-3ad114c7b1c7
+
 
 ## Overview
 
